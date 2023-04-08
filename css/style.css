@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  width: 100vw;
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background: #7599f3;
+}
+
+.drop__wrapper {
+  background: #e4e4e4;
+  max-width: 430px;
+  width: 100%;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.drop__header {
+  font-size: 1.7em;
+  font-weight: 600;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+.drop__header,
+.upload-icon,
+.drop__do-that,
+.drop__progress-icon,
+.drop__checkmark {
+  color: #7599f3;
+}
+
+.drop__area {
+  height: 165px;
+  border: 2px #7599f3 dashed;
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  margin: 30px 0;
+}
+
+.upload-icon {
+  font-size: 2.5em;
+}
+
+.drop__do-that {
+  font-size: 1em;
+  margin-top: 10px;
+  font-weight: 500;
+}
+
+.drop__row {
+  background-color: #c6d6fc;
+  margin-bottom: 10px;
+  padding: 10px 20px;
+  border-radius: 10px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.drop__progress-icon {
+  font-size: 2em;
+}
+
+.drop__details {
+  font-size: 0.9em;
+}
+
+.drop__progress-area .drop__row .drop__content {
+  width: 100%;
+  margin-left: 10px;
+}
+
+.drop__progress-area .drop__details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-bottom: 10px;
+}
+
+.drop__progress-bar {
+  height: 5px;
+  width: 100%;
+  background-color: #edf0ff;
+  margin-bottom: 5px;
+
+  border-radius: 30px;
+}
+
+.progress {
+  height: 100%;
+  width: 50%;
+  background-color: #7599f3;
+  border-radius: inherit;
+}
+
+.drop__done-area {
+  max-height: 230px;
+  overflow-y: scroll;
+}
+
+.onprogress {
+  max-height: 150px;
+}
+
+.drop__done-area::-webkit-scrollbar {
+  width: 0;
+}
+
+.drop__done-area .drop__row .drop__content {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+.drop__done-area .drop__row .drop__details {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+}
+
+.drop__size {
+  font-size: 0.8em;
+  color: #404040;
+}
+
+.drop__checkmark {
+  font-size: 1.5em;
+}
+
+.uploadedImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.active {
+  border: 2px #7599f3 solid; 
+}
